@@ -49,6 +49,12 @@ public class Summary extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * The callback to handle returning from another activity.
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch(resultCode) {

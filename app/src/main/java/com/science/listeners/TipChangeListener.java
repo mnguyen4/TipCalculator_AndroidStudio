@@ -11,12 +11,19 @@ import java.util.PriorityQueue;
 
 /**
  * Created by MI-88H on 2/4/2015.
+ *
+ * Custom text change listener to calculate the tip as the user types.
  */
 public class TipChangeListener implements TextWatcher {
 
     private ApplicationCache cache;
     private Summary summary;
 
+    /**
+     * Constructor that will set the application cache and the activity.
+     * @param cache
+     * @param summary
+     */
     public TipChangeListener(ApplicationCache cache, Summary summary) {
         this.cache = cache;
         this.summary = summary;
@@ -27,6 +34,13 @@ public class TipChangeListener implements TextWatcher {
 
     }
 
+    /**
+     * Set the tip and calculate the bill as the user types.
+     * @param s
+     * @param start
+     * @param before
+     * @param count
+     */
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
         if (s.length() > Constants.ZERO_INT) {

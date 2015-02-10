@@ -42,10 +42,12 @@ public class Items extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		return true;
 	}
-	
-	/**
-	 * When the user tap the back button on the action bar.
-	 */
+
+    /**
+     * The callback to handle going back to the previous activity.
+     * @param item
+     * @return
+     */
 	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
 		Intent goBack = new Intent(getApplicationContext(), Summary.class);
@@ -54,6 +56,12 @@ public class Items extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+    /**
+     * The callback for when the AddItem activity finishes.
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch(resultCode) {

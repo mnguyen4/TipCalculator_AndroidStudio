@@ -81,6 +81,7 @@ public class AddItem extends Activity {
     	
     	cache.addItem(name, priceDbl);
 
+        // Set the result code and close this activity
     	Intent goBack = new Intent(getApplicationContext(), Items.class);
         setResult(Constants.RESULT_OK_CODE, goBack);
 		finish();

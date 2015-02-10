@@ -1,4 +1,0 @@
-E:\Dropbox\Personal\TipCalculator_AndroidStudio\app\build\intermediates\classes\debug
-E:\Dropbox\Personal\TipCalculator_AndroidStudio\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar
-E:\Dropbox\Personal\TipCalculator_AndroidStudio\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-014314281699cf6b2eccaf24ad25c0e693601a36.jar
-E:\Dropbox\Personal\TipCalculator_AndroidStudio\app\build\intermediates\pre-dexed\debug\classes-f7856d8b5416e69f00967e18a5bb7b41aac7530d.jar
