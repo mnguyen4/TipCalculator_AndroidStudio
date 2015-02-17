@@ -19,6 +19,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/item_add"
-        android:drawableLeft="@android:drawable/ic_input_add" />
+        android:drawableStart="@android:drawable/ic_input_add" />
 
 </RelativeLayout>

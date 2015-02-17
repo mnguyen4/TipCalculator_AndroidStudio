@@ -18,31 +18,31 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int TipDollarValue=0x7f080011;
+        public static final int TipDollarValue=0x7f080012;
         public static final int action_settings=0x7f080018;
         public static final int addItem=0x7f080006;
         public static final int itemAddOk=0x7f080004;
-        public static final int itemName=0x7f080000;
-        public static final int itemNameView=0x7f080001;
-        public static final int itemPrice=0x7f080002;
-        public static final int itemPriceView=0x7f080003;
+        public static final int itemName=0x7f080001;
+        public static final int itemNameView=0x7f080000;
+        public static final int itemPrice=0x7f080003;
+        public static final int itemPriceView=0x7f080002;
         public static final int itemSummary=0x7f080005;
         public static final int nameText=0x7f080015;
         public static final int priceText=0x7f080016;
         public static final int removeItem=0x7f080017;
         public static final int subtotalText=0x7f080007;
         public static final int subtotalValue=0x7f080008;
-        public static final int taxDollarText=0x7f080010;
-        public static final int taxDollarValue=0x7f08000f;
+        public static final int taxDollarText=0x7f08000f;
+        public static final int taxDollarValue=0x7f080010;
         public static final int taxEdit=0x7f08000b;
         public static final int taxText=0x7f080009;
         public static final int taxValue=0x7f08000a;
-        public static final int tipDollarText=0x7f080012;
-        public static final int tipEdit=0x7f08000c;
-        public static final int tipText=0x7f08000d;
-        public static final int tipValue=0x7f08000e;
-        public static final int totalText=0x7f080014;
-        public static final int totalValue=0x7f080013;
+        public static final int tipDollarText=0x7f080011;
+        public static final int tipEdit=0x7f08000e;
+        public static final int tipText=0x7f08000c;
+        public static final int tipValue=0x7f08000d;
+        public static final int totalText=0x7f080013;
+        public static final int totalValue=0x7f080014;
     }
     public static final class layout {
         public static final int activity_add_item=0x7f030000;
