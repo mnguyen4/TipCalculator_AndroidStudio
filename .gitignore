@@ -219,9 +219,9 @@ pip-log.txt
 ## Android Studio
 ###################
 
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+.gradle/
+local.properties
+.idea/workspace.xml
+.idea/libraries/
 .DS_Store
-/build
+build/
