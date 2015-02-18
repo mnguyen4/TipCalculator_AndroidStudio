@@ -19,7 +19,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/item_add"
-        android:drawableLeft="@android:drawable/ic_input_add" />
+        android:drawableStart="@android:drawable/ic_input_add" />
 
 </RelativeLayout>
-<!-- From: file:/C:/workspace/TipCalculator_AndroidStudio/app/src/main/res/layout/activity_items.xml -->
+<!-- From: file:/D:/Workspace/TipCalculator_AndroidStudio/app/src/main/res/layout/activity_items.xml -->

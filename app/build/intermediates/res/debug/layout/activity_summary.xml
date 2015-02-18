@@ -8,122 +8,124 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.science.tipcalculator.Summary" >
 
-    <TextView
-        android:id="@+id/subtotalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/subtotalStr"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:labelFor="@+id/subtotalValue" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <EditText
-        android:id="@+id/subtotalValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/subtotalText"
-        android:layout_toEndOf="@+id/subtotalText"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:clickable="false"
-        android:editable="false" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" >
 
-    <TextView
-        android:id="@+id/taxText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/subtotalText"
-        android:layout_below="@+id/subtotalValue"
-        android:layout_marginTop="64dp"
-        android:text="@string/taxStr"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:labelFor="@+id/taxValue" />
+            <TableRow
+                android:layout_marginTop="10dp" >
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/taxEdit"
-        android:layout_alignBottom="@+id/taxText"
-        android:layout_alignStart="@+id/subtotalValue" />
+                <TextView
+                    android:id="@+id/subtotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtotalStr"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:labelFor="@+id/subtotalValue" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/tipEdit"
-        android:layout_alignBottom="@+id/tipText"
-        android:layout_alignStart="@+id/taxEdit" />
+                <EditText
+                    android:id="@+id/subtotalValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:clickable="false" />
+            </TableRow>
 
-    <TextView
-        android:id="@+id/tipText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tipStr"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:labelFor="@+id/tipValue"
-        android:layout_alignEnd="@+id/taxText"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/taxText" />
+            <TableRow
+                android:layout_marginTop="64dp" >
 
-    <TextView
-        android:id="@+id/taxDollarValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/taxDollarText"
-        android:layout_alignBottom="@+id/taxDollarText"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/taxText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/taxStr"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:labelFor="@+id/taxValue" />
 
-    <TextView
-        android:id="@+id/TipDollarValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/tipDollarText"
-        android:layout_alignBottom="@+id/tipDollarText"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/taxEdit" />
+            </TableRow>
 
-    <TextView
-        android:id="@+id/totalValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/totalText"
-        android:layout_alignBottom="@+id/totalText"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TableRow
+                android:layout_marginTop="32dp" >
 
-    <TextView
-        android:id="@+id/taxDollarText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tipText"
-        android:layout_below="@+id/tipText"
-        android:layout_marginTop="128dp"
-        android:text="@string/taxDollar"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/tipText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipStr"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:labelFor="@+id/tipValue" />
 
-    <TextView
-        android:id="@+id/tipDollarText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/taxDollarText"
-        android:layout_below="@+id/taxDollarText"
-        android:layout_marginTop="16dp"
-        android:text="@string/tipDollar"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/tipEdit" />
+            </TableRow>
 
-    <TextView
-        android:id="@+id/totalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tipDollarText"
-        android:layout_below="@+id/tipDollarText"
-        android:layout_marginTop="16dp"
-        android:text="@string/total"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TableRow
+                android:layout_marginTop="64dp" >
 
+                <TextView
+                    android:id="@+id/taxDollarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/taxDollar"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
 
-</RelativeLayout><!-- From: file:/C:/workspace/TipCalculator_AndroidStudio/app/src/main/res/layout/activity_summary.xml -->
+                <TextView
+                    android:id="@+id/taxDollarValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="16dp" >
+
+                <TextView
+                    android:id="@+id/tipDollarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipDollar"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/TipDollarValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="64dp" >
+
+                <TextView
+                    android:id="@+id/totalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/totalValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout><!-- From: file:/D:/Workspace/TipCalculator_AndroidStudio/app/src/main/res/layout/activity_summary.xml -->
